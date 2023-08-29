@@ -11,6 +11,10 @@ if __name__ == "__main__":
     for item in classifier:
         print(f"{item}: {list(catalog[item].keys())[:5]}")
 
+
+
+
+
     chapters = catalog['chapters']
     ranked_chapters = [x for x in chapters.keys()]
     ranked_chapters.sort(key=lambda x: int(x))

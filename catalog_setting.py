@@ -1,4 +1,12 @@
 
+ranking_tree = {
+        'chapters': {'rank': 4, 'collections': [],  'sections': [], 'subsections': [], 'tables': []},
+        'collections': {'rank': 3, 'sections': [], 'subsections': [], 'tables': []},
+        'sections': 2,
+        'subsections': 1,
+        'tables': 0
+    }
+
 classifier = ['chapters', 'collections', 'sections', 'subsections', 'tables']
 
 catalog_item = dict[str: str]
