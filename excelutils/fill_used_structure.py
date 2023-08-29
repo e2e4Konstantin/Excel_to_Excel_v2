@@ -37,8 +37,8 @@ def fill_used_structure(tables):
             section = catalog['sections'].get(section_code, None)
             if section:
                 sections_in_tables.append((section_code, section))
-            # else:
-            #     print(f"для таблицы: {table[0]} код 'Отдел' {section_code} в каталоге не найден")
+            else:
+                print(f"для таблицы: {table[0]} код 'Отдел' {section_code} в каталоге не найден")
         else:
             print(f"в коде таблицы: {table} код 'Отдела' выделить не удалось")
 

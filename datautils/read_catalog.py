@@ -64,7 +64,8 @@ def read_catalog(file_name: str = None, file_path: str = None, sheet_name: str =
         gc.collect()
 
     else:
-        raise TypeError(OSError)
+        print(f"не найден файл с данными каталога: {file_name}, {file_path}")
+        raise TypeError(FileNotFoundError)
 
     # Глава
     # code = df[df['TITLE'].str.contains(r"^\s*Глава\s*\d+\.", case=False, regex=True)]

@@ -4,9 +4,9 @@ from excelutils import data_out_to_excel
 
 def main():
     # path = r"C:\Users\kazak.ke\Documents\Задачи\3_Reverse_to_excel"
-    # path = r"C:\Users\kazak.ke\PycharmProjects\Excel_To_Excel\src"
+    path = r"C:\Users\kazak.ke\PycharmProjects\Excel_to_Excel_v2\src"
 
-    path = r"F:\Kazak\GoogleDrive\1_KK\Job_CNAC\Python_projects\Ex_to_Ex_v2\src"
+    # path = r"F:\Kazak\GoogleDrive\1_KK\Job_CNAC\Python_projects\Ex_to_Ex_v2\src"
     file = r"template_all_output.xlsx"
 
 

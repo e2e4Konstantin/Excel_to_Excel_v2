@@ -16,8 +16,6 @@ from datautils import (
 from excelutils.fill_used_structure import fill_used_structure
 
 
-
-
 def data_out_to_excel(file_name: str = None, file_path: str = None, sheets_name: list[str] = None, grid: bool = True):
     """ Подготовка выходного файла. Удаляет все содержимое и создает шапку таблицы. """
     output_file = ExcelControl(file_name, file_path)
@@ -31,21 +29,15 @@ def data_out_to_excel(file_name: str = None, file_path: str = None, sheets_name:
         ex.set_sheet_grid(grid=grid)
         create_basic_header(ex.sheet)
 
-        ex.sheet.sheet_properties.outlinePr.summaryBelow = False    # группировка сверху
+        ex.sheet.sheet_properties.outlinePr.summaryBelow = False  # группировка сверху
 
         start_table_row = 6
         step_table_row = 2
         table_row = start_table_row
 
-
-
         # прочитать данные о всех таблицах
         tables = get_all_tables_from_data()
         fill_used_structure(tables)
-
-
-
-
 
 # tables = get_all_tables_from_data()
 #         for table in tables:
